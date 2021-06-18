@@ -1,9 +1,9 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/Users/dante/Development/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/dante/Documents/Programming/BMI"
+export "FLUTTER_ROOT=/Users/dantecypress/Development/flutter"
+export "FLUTTER_APPLICATION_PATH=/Users/dantecypress/Documents/Programming/BMI"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
-export "FLUTTER_TARGET=/Users/dante/Documents/Programming/BMI/lib/main.dart"
+export "FLUTTER_TARGET=/Users/dantecypress/Documents/Programming/BMI/lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build/ios"
 export "FLUTTER_BUILD_NAME=1.0.0"
@@ -12,4 +12,4 @@ export "DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVF
 export "DART_OBFUSCATION=false"
 export "TRACK_WIDGET_CREATION=true"
 export "TREE_SHAKE_ICONS=false"
-export "PACKAGE_CONFIG=/Users/dante/Documents/Programming/BMI/.dart_tool/package_config.json"
+export "PACKAGE_CONFIG=/Users/dantecypress/Documents/Programming/BMI/.dart_tool/package_config.json"
