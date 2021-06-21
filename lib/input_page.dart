@@ -18,6 +18,7 @@ class _InputPageState extends State<InputPage> {
   Gender selectedGender;
   int height = 180;
   int weight = 120;
+  int age = 19;
 
   @override
   Widget build(BuildContext context) {
@@ -122,7 +123,7 @@ class _InputPageState extends State<InputPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Weight',
+                          'WEIGHT',
                           style: kLabelTextStyle,
                         ),
                         Text(
@@ -132,16 +133,24 @@ class _InputPageState extends State<InputPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            FloatingActionButton(
-                              backgroundColor: Color(0xFF985eff),
-                              child: Icon(Icons.add, color: Colors.white),
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.minus,
+                              onPressed: () {
+                                setState(() {
+                                  weight = weight - 1;
+                                });
+                              },
                             ),
                             SizedBox(
                               width: 10,
                             ),
-                            FloatingActionButton(
-                              backgroundColor: Color(0xFF985eff),
-                              child: Icon(Icons.add, color: Colors.white),
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.plus,
+                              onPressed: () {
+                                setState(() {
+                                  weight = weight + 1;
+                                });
+                              },
                             ),
                           ],
                         ),
@@ -155,6 +164,40 @@ class _InputPageState extends State<InputPage> {
                       Expanded(
                         child: ReusableCard(
                           color: kActiveCardColor,
+                          cardChild: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text('AGE', style: kLabelTextStyle),
+                              Text(
+                                age.toString(),
+                                style: kNumberEle,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  RoundIconButton(
+                                    icon: FontAwesomeIcons.minus,
+                                    onPressed: () {
+                                      setState(() {
+                                        age = age - 1;
+                                      });
+                                    },
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  RoundIconButton(
+                                    icon: FontAwesomeIcons.plus,
+                                    onPressed: () {
+                                      setState(() {
+                                        age = age + 1;
+                                      });
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
