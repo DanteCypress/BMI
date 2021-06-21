@@ -12,22 +12,26 @@ const kLabelTextStyle = TextStyle(
   fontSize: 18.0,
   color: Color(0xFF8D8E98),
 );
+const kLargeTextStyle = TextStyle(
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+);
 
-class RoundIconButton extends StatelessWidget {
-  RoundIconButton({@required this.icon, @required this.onPressed});
-  final IconData icon;
-  final Function onPressed;
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-        child: Icon(icon),
-        elevation: 6.0,
-        constraints: BoxConstraints.tightFor(
-          width: 56.0,
-          height: 56.0,
-        ),
-        shape: CircleBorder(),
-        fillColor: Color(0xFF985eff),
-        onPressed: onPressed);
-  }
-}
+const kTitleStyle = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.bold,
+);
+const kResultsTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kBMITextStyle = TextStyle(
+  fontSize: 100.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kBodyTextStyle = TextStyle(
+  fontSize: 22.0,
+);
